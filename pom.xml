@@ -3,6 +3,15 @@
     <groupId>com.example</groupId>
     <artifactId>hello-cicd</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>hello-cicd</name>
+    <description>A simple Spring Boot project for CI/CD</description>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <java.version>11</java.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -10,6 +19,25 @@
 	    <artifactId>spring-boot-starter-web</artifactId>
 	    <version>2.7.0</version>
         </dependency>
+ 
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.1</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.7.1</version>
+            <scope>test</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+         </dependency>
+
     </dependencies>
 
     <build>
